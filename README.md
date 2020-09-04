@@ -1,9 +1,9 @@
 # 2016_election_finance
 Expenditure data of the top four spending campaigns during the 2016 U.S. presidential elections, from 2015-2016. Data culled from https://www.fec.gov/data/.
 
-Datasets have been lightly cleaned to reduce file sizes and increase data relevance:
-- Contribution refunds (disbursement_type: 22R, 22Y, 22Z) have been excluded, as they are not truly "expenses."
-- Columns with obvious duplicate or extraneous data have beend dropped. Dropped columns are:
+Datasets have been cleaned of irrelevant rows and empty/duplicate columns:
+- Contribution refunds (disbursement_type: 22R, 22Y, 22Z) have been excluded, as they aren't counted as "expenses" for our purposes.
+- Columns with obvious empty, duplicate or extraneous data have beend dropped. Dropped columns are:
 ['payee_prefix', 'payee_suffix', 'payee_employer',
 'payee_occupation', 'ref_disp_excess_flg', 'comm_dt',
 'payee_last_name', 'payee_first_name', 'payee_middle_name',
